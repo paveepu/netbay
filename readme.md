@@ -30,5 +30,14 @@
      4.- robotframework
      5.- Robot Framework Helper
 
+## Connect DB ##
+     Install: pip install PyMySQL (Library:)
+     Install: pip install -U robotframework-databaselibrary
+     ประกาศ หัว Library 
+     Library           DatabaseLibrary
+     Library           OperatingSystem
+     Form: 
+     
+
 </div>
 
