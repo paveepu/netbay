@@ -36,7 +36,17 @@
      ประกาศ หัว Library 
      Library           DatabaseLibrary
      Library           OperatingSystem
-     Form: 
+     *** Variable ***
+${DBName}       shipping    
+${DBUser}       root
+${DBPass}       P@ssw0rd
+${DBHost}       10.6.3.61
+${DBPort}       3306
+*** Keywords ***
+
+Connect Database
+    Connect To Database    pymysql    ${DBName}    ${DBUser}    ${DBPass}    ${DBHost}    ${DBPort}
+    
      
 
 </div>
