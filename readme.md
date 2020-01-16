@@ -30,7 +30,7 @@
      4.- robotframework
      5.- Robot Framework Helper
 
-## Connect DB ##
+### Connect DB 
      Install: pip install PyMySQL (Library:)
      Install: pip install -U robotframework-databaselibrary
      ประกาศ หัว Library 
@@ -48,6 +48,15 @@ Connect Database
     Connect To Database    pymysql    ${DBName}    ${DBUser}    ${DBPass}    ${DBHost}    ${DBPort}
     
      
+### IF Else 
 
+     Library String: pip install python-string-utils
+ตัวอย่าง: (Connect To DB First)
+Emp Select
+    ${employee} =        Query           select username from tab_user where username = 'admin';
+    ${employee} =       Convert To String           ${employee[0][0]}
+    Run Keyword IF    '${employee}'=='pupu'    Log To Console    I am in If Condition  
+    ...             ELSE IF     '${employee}'=='admin'      Log To Console      ADMIN JAAAAAAAA
+    ...                 ELSE    Log To Console      ไม่มีอะไรเลยยย 
 </div>
 
