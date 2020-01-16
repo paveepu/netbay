@@ -54,9 +54,22 @@ Connect Database
 ตัวอย่าง: (Connect To DB First)
 Emp Select
     ${employee} =        Query           select username from tab_user where username = 'admin';
-    ${employee} =       Convert To String           ${employee[0][0]}
+    ${employee} =       Convert To String           ${employee[0][0]}      
     Run Keyword IF    '${employee}'=='pupu'    Log To Console    I am in If Condition  
     ...             ELSE IF     '${employee}'=='admin'      Log To Console      ADMIN JAAAAAAAA
     ...                 ELSE    Log To Console      ไม่มีอะไรเลยยย 
+หมายเหตุ: ตอน Select มาต้อง Convert To String เพื่อ Select [แถว][คอลัมน์]
 </div>
+
+### String Should Be Equal
+
+     *** Settings ***
+     Library    String
+
+     *** Test Cases ***
+     TC
+          ${str1} =   Convert To Lowercase    ABC
+          ${str2} =   Convert To Lowercase    1A2c3D
+          Should Be Equal    ${str1}     abc
+          Should Be Equal    ${str2}     1a2c3d
 
