@@ -63,7 +63,7 @@ Emp Select
 ### How To write Condition In IF, Else
       '${Username}'=='admin' and '${UID}'=='1' 
      ใช้ and เพื่อเชื่อม condition 
-</div>
+
 
 ### String Should Be Equal
 
@@ -77,3 +77,10 @@ Emp Select
           Should Be Equal    ${str1}     abc
           Should Be Equal    ${str2}     1a2c3d
 
+
+### การ Echo RobotFramework
+
+     Pring String, Variable
+     สามารถใช้คำสั่ง     Log To Console      ${SQL}  เพื่อ Echo ค่าออกมาเช็คได้
+
+</div>
