@@ -60,7 +60,7 @@ Emp Select
     ...                 ELSE    Log To Console      ไม่มีอะไรเลยยย 
 หมายเหตุ: ตอน Select มาต้อง Convert To String เพื่อ Select [แถว][คอลัมน์]
 
-How To write Condition In IF, Else
+### How To write Condition In IF, Else
       '${Username}'=='admin' and '${UID}'=='1' 
      ใช้ and เพื่อเชื่อม condition 
 </div>
