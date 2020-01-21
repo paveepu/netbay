@@ -83,4 +83,11 @@ Emp Select
      Pring String, Variable
      สามารถใช้คำสั่ง     Log To Console      ${SQL}  เพื่อ Echo ค่าออกมาเช็คได้
 
+#######################################################################################
+
+###  Robot Framework With Appium
+     Appium Library พัฒนาขึ้นมาสำหรับ Automate Test ฝั่ง Mobile Such As Android 
+     วิธีการ Install :     https://www.qahive.com/2017/07/23/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87-appium-robot-framework-test-mobile-app/
+          
+
 </div>
